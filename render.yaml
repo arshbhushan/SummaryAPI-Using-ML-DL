@@ -1,0 +1,7 @@
+# render.yaml
+
+services:
+  - name: flask-app
+    env: python
+    start_command: poetry run python app.py
+    build_command: poetry install --no-root
